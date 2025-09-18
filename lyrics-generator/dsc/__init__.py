@@ -68,7 +68,7 @@ def save_dsc(path: str | os.PathLike,
             bytes_id = struct.pack('<i', command_id)
             name, length = codes.get(command_id)
 
-            if len(data) == length:
+            if len(data) != length:
                 raise DscInvalidData(command_id, name, length, data)
 
             dsc.write(bytes_id)

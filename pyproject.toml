@@ -1,0 +1,10 @@
+[project]
+name = "megamixplus-lyrics-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "tomlkit>=0.13.3",
+    "typer>=0.17.4",
+]
